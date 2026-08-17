@@ -15,6 +15,9 @@ import sympaImg from '../assets/sympa_pharma.png';
 import tufnetsImg from '../assets/tufnets.png';
 import welltekImg from '../assets/welltek.png';
 import genoImg from '../assets/geno.png';
+import soplImg from '../assets/sopl.png';
+import fortuneImg from '../assets/fortune.png';
+
 export const SEED_SERVICES = [
   // 1. Consultancy
   {
@@ -490,7 +493,7 @@ export const SEED_PROJECTS = [
       "Full Flameproof Ex-d certified motor and switchgear installation"
     ]
   },
-    {
+  {
     id: "p10",
     title: "SRF LIMITED COATING PLANT EXPANSION",
     slug: "specialty-chemical-bulk-drug",
@@ -554,6 +557,50 @@ export const SEED_PROJECTS = [
       "Flammable solvent vapor extraction with LEL sensors and nitrogen blanketing",
       "Zero Liquid Discharge (ZLD) plant with 98% water recovery",
       "Full Flameproof Ex-d certified motor and switchgear installation"
+    ]
+  },
+  {
+    id: "p13",
+    title: "FORTUNE PHARMACEUTICAL INDIA PVT. LTD.",
+    slug: "sterile-injectables-lyophilization-facility",
+    sector: "Pharmaceutical",
+    location: "SIP - PITHAMPUR (M.P.), India",
+    scope: "Turnkey HVAC, Cleanroom Class A/B, and Process Piping Design",
+    description: "Comprehensive engineering design and validation for a 120,000 sq.ft state-of-the-art sterile oncology injectables facility. Included two high-capacity lyophilizers, isolated barrier systems (RABS), continuous environmental monitoring, and full USFDA compliance qualification.",
+    image_url: fortuneImg,
+    featured: true,
+    stats: {
+      area: "120,000 sq.ft",
+      cleanroomClass: "ISO 5 (Class A/B)",
+      compliance: "USFDA / EU-GMP",
+      timeline: "14 Months"
+    },
+    highlights: [
+      "Zero-downtime dual-chilled water system with automated switchover",
+      "WFI loop with continuous 85°C recirculation and ozone sanitization",
+      "First-pass approval during USFDA pre-approval inspection"
+    ]
+  },
+  {
+    id: "p14",
+    title: "SOPL PVT. LTD.",
+    slug: "sterile-injectables-lyophilization-facility",
+    sector: "Biotechnology",
+    location: "SIP - PITHAMPUR (M.P.), India",
+    scope: "Turnkey HVAC, Cleanroom Class A/B, and Process Piping Design",
+    description: "Comprehensive engineering design and validation for a 120,000 sq.ft state-of-the-art sterile oncology injectables facility. Included two high-capacity lyophilizers, isolated barrier systems (RABS), continuous environmental monitoring, and full USFDA compliance qualification.",
+    image_url: soplImg,
+    featured: true,
+    stats: {
+      area: "120,000 sq.ft",
+      cleanroomClass: "ISO 5 (Class A/B)",
+      compliance: "USFDA / EU-GMP",
+      timeline: "14 Months"
+    },
+    highlights: [
+      "Zero-downtime dual-chilled water system with automated switchover",
+      "WFI loop with continuous 85°C recirculation and ozone sanitization",
+      "First-pass approval during USFDA pre-approval inspection"
     ]
   }
 ];
