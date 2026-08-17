@@ -116,28 +116,33 @@ export const dataService = {
     return SEED_TESTIMONIALS;
   },
 
-  // Enquiries (Contact submission)
+  // Enquiries (Contact submission via Django REST Framework API)
   async submitEnquiry(enquiry) {
-    if (isSupabaseConfigured && supabase) {
-      const { data, error } = await supabase
-        .from('enquiries')
-        .insert([{
-          name: enquiry.name,
-          company: enquiry.company || '',
-          email: enquiry.email,
-          phone: enquiry.phone || '',
-          project_type: enquiry.projectType || enquiry.project_type || 'General Enquiry',
-          message: enquiry.message,
-          status: 'new'
-        }]);
-      if (error) throw error;
-      return { success: true, mode: 'supabase', data };
+    const backendUrl = import.meta.env.VITE_API_URL || 'http://127.0.0.1:8000/api/enquiries/';
+
+    const response = await fetch(backendUrl, {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify({
+        full_name: enquiry.name,
+        company: enquiry.company || '',
+        corporate_email: enquiry.email,
+        phone: enquiry.phone || '',
+        discipline: enquiry.projectType || enquiry.discipline || '',
+        project_scope: enquiry.message || enquiry.project_scope || '',
+        website: '', // Anti-spam honeypot field
+      }),
+    });
+
+    const data = await response.json();
+
+    if (!response.ok) {
+      const errorMsg = data.detail || Object.values(data).flat().join(' ') || 'Failed to submit enquiry';
+      throw new Error(errorMsg);
     }
 
-    // Local Mock / Demo submission
-    console.info('Enquiry received (Local Mode):', enquiry);
-    // Simulate network delay
-    await new Promise(resolve => setTimeout(resolve, 600));
-    return { success: true, mode: 'local' };
+    return { success: true, mode: 'django_backend', data };
   }
 };
