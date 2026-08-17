@@ -103,8 +103,8 @@ export function Projects() {
         ) : (
           <ProjectCardGrid
             projects={filteredProjects}
-            title={`${activeSector === 'All' ? 'All' : activeSector} Facilities (${filteredProjects.length})`}
-            subtitle="Detailed case studies featuring process architecture, regulatory audits, and commissioning metrics."
+            title={`${activeSector === 'All' ? 'Our Projects' : activeSector} (${filteredProjects.length})`}
+            subtitle= "“Successfully delivered multiple high-impact projects, demonstrating expertise, innovation, and consistent excellence.”"
             showViewAll={false}
           />
         )}

@@ -3,7 +3,18 @@ import sanjeevImg from '../assets/sanjeev-kolhe.jpeg';
 import avinashImg from '../assets/avinash-tayde.jpeg';
 import devendraImg from '../assets/devendra-navale.jpeg';
 import anuragImg from '../assets/anurag-songer.jpeg';
-
+import amixorImg from '../assets/amixor.png';
+import dycineoncologyImg from '../assets/dycine_oncology.png';
+import dycineosdImg from '../assets/dycine_osd.png';
+import relsusImg from '../assets/relsus.png';
+import panasonicImg from '../assets/panasonic.png';
+import l2mtechImg from '../assets/l2mtech.png';
+import samsonImg from '../assets/samson.png';
+import srfImg from '../assets/srf_limited.png';
+import sympaImg from '../assets/sympa_pharma.png';
+import tufnetsImg from '../assets/tufnets.png';
+import welltekImg from '../assets/welltek.png';
+import genoImg from '../assets/geno.png';
 export const SEED_SERVICES = [
   // 1. Consultancy
   {
@@ -283,13 +294,13 @@ export const SEED_SERVICES = [
 export const SEED_PROJECTS = [
   {
     id: "p1",
-    title: "Sterile Injectables & Lyophilization Facility",
+    title: "ONCOLOGY PLANT- WELLTEK LIFESCIENCES PVT. LTD.",
     slug: "sterile-injectables-lyophilization-facility",
     sector: "Pharmaceutical",
-    location: "Ahmedabad, India",
+    location: "SIP - PITHAMPUR (M.P.), India",
     scope: "Turnkey HVAC, Cleanroom Class A/B, and Process Piping Design",
     description: "Comprehensive engineering design and validation for a 120,000 sq.ft state-of-the-art sterile oncology injectables facility. Included two high-capacity lyophilizers, isolated barrier systems (RABS), continuous environmental monitoring, and full USFDA compliance qualification.",
-    image_url: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&w=1200&q=80",
+    image_url: welltekImg,
     featured: true,
     stats: {
       area: "120,000 sq.ft",
@@ -305,13 +316,13 @@ export const SEED_PROJECTS = [
   },
   {
     id: "p2",
-    title: "High Potency API (HPAPI) Synthesis Unit",
+    title: "GENO PHARMACEUTICALS PVT. LTD.",
     slug: "high-potency-api-synthesis-unit",
-    sector: "API",
-    location: "Hyderabad, India",
+    sector: "Pharmaceutical",
+    location: "PITHAMPUR (M.P.), India",
     scope: "Containment Engineering (OEB 5) & Solvent Recovery System",
     description: "Engineering consultancy and detailed piping design for an advanced HPAPI manufacturing plant requiring OEB 5 containment level (<1 µg/m³). Designed closed-loop isolator transfers, vacuum transfer systems, dedicated scrubbers, and automated solvent distillation plants.",
-    image_url: "https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?auto=format&fit=crop&w=1200&q=80",
+    image_url: genoImg,
     featured: true,
     stats: {
       area: "75,000 sq.ft",
@@ -327,13 +338,13 @@ export const SEED_PROJECTS = [
   },
   {
     id: "p3",
-    title: "Monoclonal Antibody (mAb) Biotech Suite",
+    title: "DYCINE PHARMACEUTICALS PVT. LTD. (OSD PLANT)",
     slug: "monoclonal-antibody-biotech-suite",
-    sector: "Biotechnology",
-    location: "Pune, India",
+    sector: "pharmaceutical",
+    location: "SIP - PITHAMPUR (M.P.), India",
     scope: "Upstream & Downstream Process Architecture and WFI Distribution",
     description: "Concept-to-commissioning engineering for single-use bioreactor suites, chromatography purification skids, and automated CIP/SIP generation systems. Engineered an energy-efficient multi-effect WFI loop delivering 3,000 LPH compliant with European Pharmacopoeia standards.",
-    image_url: "https://images.unsplash.com/photo-1532187863486-abf9dbad1b69?auto=format&fit=crop&w=1200&q=80",
+    image_url: dycineosdImg,
     featured: true,
     stats: {
       area: "90,000 sq.ft",
@@ -349,13 +360,13 @@ export const SEED_PROJECTS = [
   },
   {
     id: "p4",
-    title: "Automated Oral Solid Dosage (OSD) Mega-Plant",
+    title: "DYCINE PHARMACEUTICALS LTD. (ONCOLOGY)",
     slug: "automated-osd-mega-plant",
     sector: "Pharmaceutical",
-    location: "Vadodara, India",
+    location: "SIP- PITHAMPUR (M.P.), India",
     scope: "HVAC, Dust Extraction, and Automated Material Handling",
     description: "Greenfield project execution for a 4-billion tablets/year capacity facility. Integrated central dust collection, precise relative humidity control for effervescent manufacturing, and automated guided vehicle (AGV) clean corridors.",
-    image_url: "https://images.unsplash.com/photo-1587293852726-70cdb56c2866?auto=format&fit=crop&w=1200&q=80",
+    image_url: dycineoncologyImg,
     featured: true,
     stats: {
       area: "210,000 sq.ft",
@@ -371,13 +382,13 @@ export const SEED_PROJECTS = [
   },
   {
     id: "p5",
-    title: "Continuous Fermentation & Biosimilar Scale-up",
+    title: "L2Mtech INDIA PVT. LTD.",
     slug: "continuous-fermentation-biosimilar",
     sector: "Biotechnology",
-    location: "Bangalore, India",
+    location: "MEDICAL DEVICE PARK UJJAIN (M.P.), India",
     scope: "Process Automation, SCADA Architecture, and Qualification",
     description: "Detailed automation and electrical design for industrial-scale microbial fermentation. Implemented redundant PLC/SCADA systems with 21 CFR Part 11 electronic batch records and automated harvest recovery loops.",
-    image_url: "https://images.unsplash.com/photo-1563770660941-20978e870e26?auto=format&fit=crop&w=1200&q=80",
+    image_url: l2mtechImg,
     featured: false,
     stats: {
       area: "65,000 sq.ft",
@@ -393,13 +404,145 @@ export const SEED_PROJECTS = [
   },
   {
     id: "p6",
-    title: "Specialty Chemical & Bulk Drug Intermediate Plant",
+    title: "RELSUS INDIA PVT. LTD.",
     slug: "specialty-chemical-bulk-drug",
     sector: "Industrial",
-    location: "Dahej, India",
+    location: "DMIC VIKRAM UDYOGPURI- UJJAIN (M.P.), India",
     scope: "Class 1 Div 1 Hazardous Electrical Design & Zero Liquid Discharge (ZLD)",
     description: "Comprehensive safety and environmental engineering including hazardous area classification, explosion-proof electrical systems, scrubber engineering, and integrated ZLD effluent treatment plant.",
-    image_url: "https://images.unsplash.com/photo-1504917599217-d4dc5ebe6122?auto=format&fit=crop&w=1200&q=80",
+    image_url: relsusImg,
+    featured: false,
+    stats: {
+      area: "150,000 sq.ft",
+      cleanroomClass: "Industrial Safe Zone",
+      compliance: "PESO / GPCB / CPCB",
+      timeline: "15 Months"
+    },
+    highlights: [
+      "Flammable solvent vapor extraction with LEL sensors and nitrogen blanketing",
+      "Zero Liquid Discharge (ZLD) plant with 98% water recovery",
+      "Full Flameproof Ex-d certified motor and switchgear installation"
+    ]
+  },
+  {
+    id: "p7",
+    title: "TUFNETS PRIVATE LIMITED (R&D CENTER)",
+    slug: "specialty-chemical-bulk-drug",
+    sector: "Industrial",
+    location: "SEZ- PITHAMPUR (M.P.), India",
+    scope: "Class 1 Div 1 Hazardous Electrical Design & Zero Liquid Discharge (ZLD)",
+    description: "Comprehensive safety and environmental engineering including hazardous area classification, explosion-proof electrical systems, scrubber engineering, and integrated ZLD effluent treatment plant.",
+    image_url: tufnetsImg,
+    featured: false,
+    stats: {
+      area: "150,000 sq.ft",
+      cleanroomClass: "Industrial Safe Zone",
+      compliance: "PESO / GPCB / CPCB",
+      timeline: "15 Months"
+    },
+    highlights: [
+      "Flammable solvent vapor extraction with LEL sensors and nitrogen blanketing",
+      "Zero Liquid Discharge (ZLD) plant with 98% water recovery",
+      "Full Flameproof Ex-d certified motor and switchgear installation"
+    ]
+  },
+  {
+    id: "p8",
+    title: "AMIXOR PHARMACUETICALS PVT. LTD. (DRY INJECTABLE)",
+    slug: "specialty-chemical-bulk-drug",
+    sector: "Pharmaceutical",
+    location: "UJJAINI (M.P.), India",
+    scope: "Class 1 Div 1 Hazardous Electrical Design & Zero Liquid Discharge (ZLD)",
+    description: "Comprehensive safety and environmental engineering including hazardous area classification, explosion-proof electrical systems, scrubber engineering, and integrated ZLD effluent treatment plant.",
+    image_url: amixorImg,
+    featured: false,
+    stats: {
+      area: "150,000 sq.ft",
+      cleanroomClass: "Industrial Safe Zone",
+      compliance: "PESO / GPCB / CPCB",
+      timeline: "15 Months"
+    },
+    highlights: [
+      "Flammable solvent vapor extraction with LEL sensors and nitrogen blanketing",
+      "Zero Liquid Discharge (ZLD) plant with 98% water recovery",
+      "Full Flameproof Ex-d certified motor and switchgear installation"
+    ]
+  },
+  {
+    id: "p9",
+    title: "SYMPA PHARMA PVT. LTD.",
+    slug: "specialty-chemical-bulk-drug",
+    sector: "Pharmaceutical",
+    location: "INDUSTRIAL AREA JETAPUR-PALASYA, DIST- DHAR (M.P.), India",
+    scope: "Class 1 Div 1 Hazardous Electrical Design & Zero Liquid Discharge (ZLD)",
+    description: "Comprehensive safety and environmental engineering including hazardous area classification, explosion-proof electrical systems, scrubber engineering, and integrated ZLD effluent treatment plant.",
+    image_url: sympaImg,
+    featured: false,
+    stats: {
+      area: "150,000 sq.ft",
+      cleanroomClass: "Industrial Safe Zone",
+      compliance: "PESO / GPCB / CPCB",
+      timeline: "15 Months"
+    },
+    highlights: [
+      "Flammable solvent vapor extraction with LEL sensors and nitrogen blanketing",
+      "Zero Liquid Discharge (ZLD) plant with 98% water recovery",
+      "Full Flameproof Ex-d certified motor and switchgear installation"
+    ]
+  },
+    {
+    id: "p10",
+    title: "SRF LIMITED COATING PLANT EXPANSION",
+    slug: "specialty-chemical-bulk-drug",
+    sector: "Pharmaceutical",
+    location: "DTA - 01 PITHAMPUR (M.P.), India",
+    scope: "Class 1 Div 1 Hazardous Electrical Design & Zero Liquid Discharge (ZLD)",
+    description: "Comprehensive safety and environmental engineering including hazardous area classification, explosion-proof electrical systems, scrubber engineering, and integrated ZLD effluent treatment plant.",
+    image_url: srfImg,
+    featured: false,
+    stats: {
+      area: "150,000 sq.ft",
+      cleanroomClass: "Industrial Safe Zone",
+      compliance: "PESO / GPCB / CPCB",
+      timeline: "15 Months"
+    },
+    highlights: [
+      "Flammable solvent vapor extraction with LEL sensors and nitrogen blanketing",
+      "Zero Liquid Discharge (ZLD) plant with 98% water recovery",
+      "Full Flameproof Ex-d certified motor and switchgear installation"
+    ]
+  },
+  {
+    id: "p11",
+    title: "SAMSON SCIENTIFICS AND SURGICAL PVT. LTD.",
+    slug: "specialty-chemical-bulk-drug",
+    sector: "Pharmaceutical",
+    location: "MEDICAL DEVICE PARK UJJAIN (M.P.), India",
+    scope: "Class 1 Div 1 Hazardous Electrical Design & Zero Liquid Discharge (ZLD)",
+    description: "Comprehensive safety and environmental engineering including hazardous area classification, explosion-proof electrical systems, scrubber engineering, and integrated ZLD effluent treatment plant.",
+    image_url: samsonImg,
+    featured: false,
+    stats: {
+      area: "150,000 sq.ft",
+      cleanroomClass: "Industrial Safe Zone",
+      compliance: "PESO / GPCB / CPCB",
+      timeline: "15 Months"
+    },
+    highlights: [
+      "Flammable solvent vapor extraction with LEL sensors and nitrogen blanketing",
+      "Zero Liquid Discharge (ZLD) plant with 98% water recovery",
+      "Full Flameproof Ex-d certified motor and switchgear installation"
+    ]
+  },
+  {
+    id: "p12",
+    title: "PANASONIC ENERGY INDIA LTD.",
+    slug: "specialty-chemical-bulk-drug",
+    sector: "Manufacturing",
+    location: "PITHAMPUR (M.P.), India",
+    scope: "Class 1 Div 1 Hazardous Electrical Design & Zero Liquid Discharge (ZLD)",
+    description: "Comprehensive safety and environmental engineering including hazardous area classification, explosion-proof electrical systems, scrubber engineering, and integrated ZLD effluent treatment plant.",
+    image_url: panasonicImg,
     featured: false,
     stats: {
       area: "150,000 sq.ft",
